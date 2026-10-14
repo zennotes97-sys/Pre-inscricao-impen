@@ -1,0 +1,17 @@
+ALTER TABLE inscricoes
+    ADD COLUMN apelido VARCHAR(100) NOT NULL DEFAULT '' AFTER nome,
+    ADD COLUMN outros_nomes VARCHAR(150) NOT NULL DEFAULT '' AFTER apelido,
+    ADD COLUMN telefone_opcional VARCHAR(30) NOT NULL DEFAULT '' AFTER contacto,
+    ADD COLUMN classe_anterior VARCHAR(150) NOT NULL DEFAULT '' AFTER turno,
+    ADD COLUMN escola_anterior VARCHAR(200) NULL AFTER classe_anterior,
+    ADD COLUMN nivel_anterior VARCHAR(50) NOT NULL DEFAULT '' AFTER escola_anterior,
+    ADD COLUMN ano_conclusao SMALLINT UNSIGNED NULL AFTER nivel_anterior,
+    ADD COLUMN genero VARCHAR(20) NOT NULL DEFAULT '' AFTER ano_conclusao,
+    ADD COLUMN estado_civil VARCHAR(30) NULL AFTER genero,
+    ADD COLUMN data_nascimento DATE NULL AFTER estado_civil,
+    ADD COLUMN tipo_documento VARCHAR(50) NOT NULL DEFAULT '' AFTER data_nascimento,
+    ADD COLUMN numero_documento VARCHAR(100) NOT NULL DEFAULT '' AFTER tipo_documento,
+    ADD COLUMN validade_documento DATE NULL AFTER numero_documento,
+    ADD COLUMN local_emissao VARCHAR(150) NOT NULL DEFAULT '' AFTER validade_documento,
+    ADD COLUMN provincia VARCHAR(80) NOT NULL DEFAULT '' AFTER local_emissao,
+    ADD COLUMN cidade_distrito VARCHAR(120) NOT NULL DEFAULT '' AFTER provincia;

@@ -1,0 +1,21 @@
+Sim. A captura mostra o template para avisar a secretaria. Configure-o assim:
+
+Template de aviso à secretaria
+
+To Email: secretaria@impen.co.mz
+Subject: Nova pré-inscrição - {{curso}}
+From Name: Pré-Inscrição IMPEN
+Reply To: {{email}}
+No conteúdo, use estas variáveis, que correspondem ao formulário:
+{{nome}}, {{email}}, {{contacto}}, {{curso}}, {{turno}} e {{morada}}.
+O template que aparece na imagem usa {{name}}, {{title}} e {{message}}; substitua-as pelas variáveis acima, pois esses nomes não correspondem aos campos do formulário.
+
+Depois, no separador Auto
+
+if0_43144066_pre_inscricao_impen
+
+mGOBATV7s7Wlg
+
+f0_43144066
+
+sql213.infinityfree.com

@@ -1,0 +1,5 @@
+ALTER TABLE inscricoes
+    MODIFY COLUMN escola_anterior VARCHAR(200) NULL,
+    MODIFY COLUMN ano_conclusao SMALLINT UNSIGNED NULL,
+    MODIFY COLUMN estado_civil VARCHAR(30) NULL,
+    MODIFY COLUMN morada TEXT NULL;
